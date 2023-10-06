@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster</title>
+    <link href="./idec-css/safety.css" rel="stylesheet" />
+    <link href="./idec-css/reset123.css" rel="stylesheet" />
+    <link href="./idec-css/protocol.css" rel="stylesheet" />
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="container">
+                <div class="logo ">
+                    <a class="brand" href="home.html"><img src="assets/img/logo.png" alt=""><img
+                            src="./images/teamlogo.png" alt=""
+                            style="width: 100px; vertical-align: middle; margin-top: -10px;"></a>
+                </div>
+                <div class="menu clearfix">
+                    <div class="menu-active1 rightfix">
+                        <ul class="menu-list "><a href="home.html">HOME</a></ul>
+                        <ul class="menu-list "><a href="#">TEAM <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <li><a href="member.html">MEMBERS</a></li>
+                            <li><a href="attributions.html">ATTRIBUTIONS</a></li>
+                        </ul>
+                        <ul class="menu-list "><a href="#">PROJECT <i class="fa fa-angle-down"
+                                    aria-hidden="true"></i></a>
+                            <li><a href="background.html">BACKGROUND</a></li>
+                            <li><a href="design.html">DESIGN</a></li>
+                            <li><a href="Results.html">RESULTS</a></li>
+                            <li><a href="Report.html">REPORT</a></li>
+                        
+                            <li><a href="supplement.html">SUPPLEMENT</a></li>
+                            <li><a href="poster.html">POSTER</a></li>
+                        </ul>
+                        <ul class="menu-list "><a href="#">DOCUMENTATION <i class="fa fa-angle-down"
+                                    aria-hidden="true"></i></a>
+                            <li><a href="experiments.html">EXPERIMENTS</a></li>
+                            <li><a href="safety.html">SAFETY</a></li>
+                            <li><a href="protocol.html">PROTOCOL</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <img id="back-to-top-button" src="images/back top.png" width="50px" alt="返回顶部">
+    <div class="content-row-list">
+        <div class="row-cols-1">
+            <div class="content-col-4">
+                <img src="./images/baniere-gauche2.png" alt="">
+            </div>
+            <div class="content-col-4-h1">
+                <h1>POSTER</h1>
+            </div>
+            <div class="content-col-4">
+                <img src="./images/baniere-droite1.png" alt="">
+            </div>
+            <p id="introduction"></p>
+        </div>
+    </div>
+    <div class="pdf">
+        <iframe src="./idec-css/poster.pdf" type="poster/pdf" width="90%" height="1000px"
+            style="display: block; margin: 0 auto;">
+        </iframe>
+    </div>
+
+
+    <footer style="overflow:hidden">
+        <div class="fbox">
+            <div class="fleft">
+                <h1 style="color: #0F5132;margin-top: 30px;">NNU-IDEC 2023</h1>
+                <p style="text-align: center;"><img src="images/teamlogo.png" alt=""
+                        style="width: 240px;margin-left: -36px;"></p>
+                <p style="text-align: center;"><img src="images/iDEC Logo.png" alt=""
+                        style="width: 200PX;margin-left: -13px;"></p>
+            </div>
+            <div class="frihgt">
+                <div class="sponsors"
+                    style="background-color: #0F5132; color: #fff; border-radius: 90px;text-align: center;margin-top: 30px;">
+                    MAIN SPONSORS</div>
+                <div class="pics">
+                    <div class="pitem"><img src="http://www.njnu.edu.cn/images/nnu-logo.png" alt=""
+                            style="width: 480px;"></div>
+                    <div class="pitem"><img src="http://spxy.njnu.edu.cn/images/i-21.png" alt=""
+                            style="width: 480px; margin-top: 10px;">
+                    </div>
+                </div>
+
+                <div class="sponsors"
+                    style="background-color: #0F5132; color: #fff; border-radius: 90px;text-align: center;margin-top: 30px;">
+                    LOGISTICS SPONSORS</div>
+                <div class="pics">
+                    <div class="pitem"><img src="images/sigma.png" alt="" style="width: 150px;"></div>
+                    <div class="pitem"><img src="images/takara.png" alt="" style="width: 150px;"></div>
+                    <div class="pitem"><img src="images/eppendorf.png" alt="" style="width: 150px;"></div>
+                    <div class="pitem"><img src="images/vazyme.png" alt="" style="width: 150px;"></div>
+                </div>
+                <div class="pics">
+                    <div class="pitem"><img src="images/thermofisher.png" alt="" style="width: 150px;"></div>
+                    <div class="pitem"><img src="images/biyuntian.png" alt="" style="width: 150px;"></div>
+                    <div class="pitem"><img
+                            src="https://cdn.snapgene.com/assets/16.23.19/assets/images/snapgene/logo/logo-snapgene-dotmatics.svg"
+                            alt="" style="width: 150px;"></div>
+                    <div class="pitem"><img src="images/biorender.png" alt="" style="width: 150px;"></div>
+                </div>
+            </div>
+
+        </div>
+        <p
+            style="color:  #E3DDD0; font-size:16px;background-color: #222124;padding: 20px 40px; box-sizing: border-box;margin-top: 30px;text-align: center;">
+            @ 2023-NNU CHINA
+
+
+        </p>
+    </footer>
+    <script>// 当页面滚动时显示或隐藏返回顶部图片
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            var button = document.getElementById("back-to-top-button");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        // 当点击图片时滚动回页面顶部
+        document.getElementById("back-to-top-button").addEventListener("click", function () {
+            document.body.scrollTop = 0; // Safari
+            document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, Edge
+        });
+
+    </script>
+</body>
+
+</html>
