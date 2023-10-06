@@ -1,0 +1,535 @@
+* {
+    margin:0; 
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+/*region导航*/
+
+header{
+    position: sticky;
+    top:0;
+    z-index: 100;
+  
+}
+
+.nav-container .container{
+    height:80px;
+    background-image:radial-gradient(ellipse at left, rgba(88,159,125), rgba(88,159,125),rgba(88,159,125));
+    
+}
+
+.menu-active1{
+   display: flex;
+   margin-right: 25px;
+   margin-top: 20px;
+}
+
+.logo .brand{
+position: absolute;
+margin: 15px 100px;
+}
+.menu-list{
+    border-radius:10px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 34px;
+    transition: 3s;
+    cursor: pointer;
+   
+}
+.menu-list:hover{
+    background-color: #589F7D;
+
+}
+.menu-list li:hover{
+    background-color:#6fd3a3;
+    }
+
+.menu-list li{
+    height:0;
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(-36px);
+    background-color:#589F7D;
+}
+.menu-list li:last-child{
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    padding-bottom: 5px;
+}
+.menu-list:hover li{
+    height: 34px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header .mobile-menu {
+    display: none; }
+/*endregion导航*/
+
+/*f返回首页*/
+.right-aside {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+/*region标题*/
+.content-row-list {
+    width: 100%;
+ }
+ 
+ .content-row-list>.row-cols-1 {
+    display: flex;
+    background: #C9E4D4;
+ }
+ 
+ .content-row-list>.row-cols-1>.content-col-4 {
+    width: 33.33%;
+ }
+ 
+ .content-row-list>.row-cols-1>.content-col-4>img {
+    width: 80%;
+ }
+ 
+ .content-row-list>.row-cols-1>.content-col-4-h1 {
+    width: 33.33%;
+    margin-top: auto;
+    margin-bottom: auto
+ }
+ 
+ .content-row-list>.row-cols-1>.content-col-4-h1>h1 {
+    color: var(--text-title);
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6bd898;
+ }
+/*endregion标题*/
+  @font-face{
+  font-family: CROSS;
+  src: url(../zi/crossedout-1gxje.ttf);
+  } 
+
+
+/*region侧栏*/
+@font-face{
+    font-family: school;
+    src: url(../zi/animekidspersonaluse-p7yzd.otf);
+    } 
+   
+.contain-list{
+    width: 20%;
+    
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top:80px;
+}
+.left-list{
+   text-align: right;
+   padding-right: 10%;
+   border-right:3px solid black;
+   margin-top: 10pt;
+   
+}
+.left-list h1{
+    font-family: 'school';
+    line-height: 50pt; 
+}
+.left-list h1 a:hover{
+    color:#6fd3a3;
+    }
+/*endregion侧栏*/
+
+
+/*region内容*/
+.content{
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    flex-shrink: 0
+ }
+ 
+.summary {
+    /* width:50% ; */
+    margin-left: 4%;
+ }
+ 
+.summary>#sticky_summary {
+    position: sticky;
+    top: 5rem;
+    z-index: 10;
+ }
+ 
+ .content>.summary>#sticky_summary>.bubble {
+    margin: 0 20px;
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #E5F0E8;
+    font-family: 'Fira Sans', sans-serif;
+    position: relative;
+ }
+ 
+ .content>.summary>#sticky_summary>#bubble_1 {
+    width: 100px;
+    height: 90px;
+    margin: 0 20px;
+ }
+ 
+ .content>.summary>#sticky_summary>#bubble_1>h2 {
+    margin-top: -1.1em;
+ }
+ 
+ .content>.summary>#sticky_summary>#bubble_2 {
+    width: 100px;
+    height: 90px;
+    margin: 0 20px;
+ }
+ 
+ .content>.summary>#sticky_summary>#bubble_2>h2 {
+    margin-top: -1.1em;
+ }
+ 
+ .content>.summary>#sticky_summary>#bubble_3 {
+    width: 100px;
+    height: 90px;
+    margin: 0 20px;
+ }
+ 
+ .content>.summary>#sticky_summary>#bubble_3>i {
+    line-break: inherit;
+    position: relative;
+    top: 50%;
+    left: 13%;
+ }
+ 
+ .content>.summary>#sticky_summary>#bubble_3>h2 {
+    margin-top: -1.1em;
+ }
+ 
+ .content>.summary>#sticky_summary>#bubble_4 {
+    width: 100px;
+    height: 90px;
+    margin: 0 20px;
+ }
+ 
+ .content>.summary>#sticky_summary>#bubble_4>i {
+    line-break: inherit;
+    position: relative;
+    top: 50%;
+    left: 15%;
+ }
+ 
+ .content>.summary>#sticky_summary>#bubble_4>h2 {
+    margin-top: -1.1em;
+ }
+ 
+ .content>.summary>#sticky_summary>#bubble_5 {
+    width: 100px;
+    height: 90px;
+    margin: 0 20px;
+ }
+ 
+ .content>.summary>#sticky_summary>#bubble_5>h2 {
+    margin-top: -1.1em;
+ }
+
+ 
+ 
+ .content>.summary>#sticky_summary>.bubble>a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+ }
+ 
+ .content>.summary>#sticky_summary>.bubble>h2 {
+    position: absolute;
+    font-size: 70% !important;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    /* margin-top: -1.1em; */
+    font-weight: bold;
+    color: #0f5132;
+ }
+ 
+ .content>.summary>#sticky_summary>.bubble>i {
+    color: #0f5132;
+ }
+ 
+ /* .content-summary_accordion>.summary>#sticky_summary>.bubble>i{
+     line-break: inherit;
+     position: relative;
+     top: 50%;
+     left: 23%;
+  } */
+ .content>.summary>#sticky_summary>.vert_summary {
+    margin-left: 65px;
+    border-left: 4px solid;
+    width: 0%;
+    height: 20px;
+    border-color: #E5F0E8
+ }
+ /* 正文 */
+#accordionExample {
+    margin: 0px 8%;
+    width: 100%;
+ }
+ 
+#accordionExample>.accordion-item:first-of-type {
+    border-top-right-radius: .25rem;
+    border-top-left-radius: .25rem;}
+
+#accordionExample>.accordion-item>.h2_exp {
+    height: 90px;
+    width: 100%;
+    vertical-align: middle;
+    border: 1px solid #e5dbdb;
+    /* display: flex; */
+    /* background-color: #ffffe0; */
+ }
+ 
+#accordionExample>#item_1>.h2_exp>.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    height: 100%;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #ffffe0;
+    /* background-color: #fff; */
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+ }
+ 
+#accordionExample>.gap_accordion {
+    height: 20px;
+ }
+ 
+ #accordionExample>#item_2>.h2_exp>.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    height: 100%;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #FFEDC2;
+    /* background-color: #fff; */
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+ }
+ 
+#accordionExample>#item_3>.h2_exp>.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    height: 100%;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #F6D9DD;
+    /* background-color: #fff; */
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+ }
+ 
+#accordionExample>#item_4>.h2_exp>.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    height: 100%;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #F3E6FE;
+    /* background-color: #fff; */
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+ }
+ 
+ #accordionExample>#item_5>.h2_exp>.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    height: 100%;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: rgb(253, 245, 250);
+    /* background-color: #fff; */
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+ }
+ 
+#accordionExample>#item_1>.h2_exp>.accordion-button>img {
+    position: relative;
+    width: 90px;
+    left: 33%;
+ }
+ 
+#accordionExample>#item_2>.h2_exp>.accordion-button>img {
+    position: relative;
+    width: 55px;
+    left: 34%;
+ }
+ 
+#accordionExample>#item_3>.h2_exp>.accordion-button>img {
+    position: relative;
+    width: 55px;
+    left: 34%;
+ }
+ 
+#accordionExample>#item_4>.h2_exp>.accordion-button>img {
+    position: relative;
+    width: 90px;
+    left: 33%;
+ }
+ 
+#accordionExample>#item_5>.h2_exp>.accordion-button>img {
+    position: relative;
+    width: 90px;
+    left: 33%;
+ }
+
+ #accordionExample>#item_1 {
+    background-color: #ffffff;
+ }
+ 
+#accordionExample>#item_2 {
+    background-color: #ffffff;
+ }
+ 
+#accordionExample>#item_3 {
+    background-color: #ffffff;
+ }
+ 
+#accordionExample>#item_4 {
+    background-color: #ffffff;
+ }
+ 
+#accordionExample>#item_5 {
+    background-color: rgb(255, 255, 255);
+ }
+
+
+#accordionExample>.accordion-item>.h2_exp>.accordion-button>p {
+    /* padding-top: 2%; */
+    width: 60%;
+ }
+ 
+#accordionExample>.accordion-item>.h2_exp>.accordion-button:focus {
+    z-index: 3;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+ }
+ 
+#accordionExample>#item_1>button {
+    background-color: #ffffe0;
+ }
+ 
+#accordionExample>.accordion-item:first-of-type.accordion {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+ }
+#accordionExample>.accordion-item>.accordion-collapse>.accordion-body {
+    padding: 1rem 1.25rem;
+ }
+ 
+#accordionExample>.accordion-item>.accordion-collapse>.accordion-body>h3 {
+    font-weight: 700;
+    color: #0f5132;
+ }
+ 
+#accordionExample>.accordion-item>.accordion-collapse>.accordion-body>p {
+    font-size: 18px;
+ }
+ 
+#accordionExample>.accordion-item>.accordion-collapse>.accordion-body>.saut_1_ligne {
+    height: 1.5em;
+    width: 100%;
+ }
+ 
+#accordionExample>.accordion-item>.accordion-collapse>.accordion-body>figure>.w-40 {
+ 
+    width: 40% !important;
+    margin: 0 auto;
+ }
+ 
+ #accordionExample>.accordion-item>.accordion-collapse>.accordion-body>figure>.w-80 {
+ 
+    width: 80% !important;
+    margin: 0 auto;
+ }
+ 
+#accordionExample>.accordion-item>.accordion-collapse>.accordion-body>figure>.w-80 {
+ 
+    width: 100% !important;
+    margin: 0 auto;
+ }
+ 
+
+
+
+
+/*region内容*/
+/*endregion结尾*/
+.right-aside{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+footer{
+    background-color: #589F7D;
+    margin-top: 200px;
+}
+.fbox{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.fleft{
+    flex: 30%;
+}
+.frihgt{
+    flex:70%;
+}
+.pics{
+    display: flex;
+}
+.pitem{
+    flex: 1;
+    padding-left: 50px;
+    margin: 20px 0;
+}

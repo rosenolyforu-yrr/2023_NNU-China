@@ -1,0 +1,96 @@
+#back-to-top-button {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   z-index: 99;
+   cursor: pointer;
+}
+
+.Intermediate-content {
+   padding: 0
+}
+
+.container-top {
+   width: 80%;
+   /* max-width: 960px; */
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.container-top-img {
+   width: 100%;
+}
+
+.container-top-img>img {
+   width: 100%;
+}
+
+.container-top-second {
+   width: 100%;
+   height: 1700px;
+   background-image: url('..//images/98.png');
+   background-repeat: no-repeat;
+}
+
+.container-typeface {
+   height: 760px;
+   width: 100%;
+   text-align: center;
+   background-image: url('../images/HOME.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+.container-typeface>h1 {
+   line-height: 10vh;
+   font-weight: bold;
+   color: #fff;
+   font-size: 40px;
+}
+
+.container-typeface>h1>span {
+   font-size: 40px;
+   font-weight: bold;
+   color: #fff;
+}
+
+.left-col-md-6 {
+   width: 60%;
+   padding-top: 370px;
+   /* height: 447px; */
+}
+
+.right-col-md-7 {
+   margin-left: 55%;
+   width: 55%;
+   padding-top: 210px;
+}
+
+
+@media screen and (min-width:1200px) {
+   .container-top {
+      max-width: 1140px;
+   }
+}
+
+@media screen and (max-width:1200px) {
+   .container-top {
+      max-width: 960px;
+   }
+}
+
+.pph {
+   color: rgba(88, 159, 125);
+   font-family: SOURCESANSPRO-REGULAR;
+   font-size: 30px;
+   text-shadow: 1px 0px;
+   line-height: 1.6;
+   text-align: justify;
+}
+
+@font-face {
+   font-family: CROSS;
+   src: url(../zi/colorbow-colorbow-svg-400.otf);
+}

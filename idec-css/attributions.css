@@ -1,0 +1,56 @@
+table.center-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table.center-table tr {
+    width: auto;
+}
+
+table.center-table th {
+    background-color: rgb(88, 159, 125);
+    font-size: smaller;
+}
+
+table.center-table td,
+table.center-table th {
+    text-align: center;
+    font-weight: 700;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+ol li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+ol li::before {
+    content: "\2022";
+    font-size: 1.5em;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+}
+
+#back-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.space {
+    height: 80pt;
+}

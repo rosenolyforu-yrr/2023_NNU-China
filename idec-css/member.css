@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+/*region导航*/
+body {
+    min-height: 400vh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+.nav-container .container {
+    height: 80px;
+    background-image: radial-gradient(ellipse at left, rgba(88, 159, 125), rgba(88, 159, 125), rgba(88, 159, 125));
+
+}
+
+.menu-active1 {
+    display: flex;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+.logo .brand {
+    position: absolute;
+    margin: 15px 100px;
+}
+
+.menu-list {
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 34px;
+    transition: 3s;
+    cursor: pointer;
+
+}
+
+.menu-list:hover {
+    background-color: #589F7D;
+
+}
+
+.menu-list li:hover {
+    background-color: #6fd3a3;;
+}
+
+.menu-list li {
+    height: 0;
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(-36px);
+    background-color: #589F7D;
+}
+
+.menu-list li:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.menu-list:hover li {
+    height: 34px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header .mobile-menu {
+    display: none;
+}
+
+#back-to-top-button {
+    display: none;
+    /* 默认情况下隐藏图片 */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+
+/*endregion导航*/
+
+
+.infobox {
+    display: flex;
+    padding: 20px;
+    background-color: #E2F0E8;
+    overflow: hidden;
+}
+
+.infobox .info-item {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.infobox .info-item:nth-child(3) {
+    margin-right: 0;
+}
+
+.infobox .info-item .infomation {
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.infobox .info-item .infomation p {
+    height:160px;
+}
+
+
+footer {
+    background-color: #589F7D;
+}
+
+.fbox {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.fleft {
+    flex: 30%;
+}
+
+.frihgt {
+    flex: 70%;
+}
+
+.pics {
+    display: flex;
+}
+
+.pitem {
+    flex: 1;
+    padding-left: 50px;
+    margin: 20px 0;
+}
